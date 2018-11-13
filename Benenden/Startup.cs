@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Benenden.Core.DAL;
 using Benenden.Core.Interface;
 using Benenden.Core.Models;
@@ -9,7 +6,6 @@ using Benenden.Core.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -37,9 +33,9 @@ namespace Benenden
             });
 
             // connect to the database
-            services.AddDbContext<BenendenContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Benenden")));
+            services.AddDbContext<BenendenContext>(options => options.UseInMemoryDatabase("inMemory"));
             services.AddScoped<IGenericRespository<Product>, ProductRepository>();
-            services.AddScoped <IGenericRespository<Member>, MemberRepository>();
+            services.AddScoped<IGenericRespository<Member>, MemberRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -64,8 +60,7 @@ namespace Benenden
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<BenendenContext>();
-
-                context.Database.EnsureCreated();
+                AddTestData(context);
             }
 
             app.UseMvc(routes =>
@@ -73,13 +68,55 @@ namespace Benenden
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-
-                routes.MapRoute(
-                    name: "Member",
-                    template: "{controller=Member}/{action=SelectMember}");
-
-
             });
+        }
+
+        private void AddTestData(BenendenContext context)
+        {
+            var Member1 = new Member
+            {
+                Forename = "James",
+                Surname = "Foster"
+            };
+
+            var Member2 = new Member
+            {
+                Forename = "Edward",
+                Surname = "Foster"
+            };
+
+            var Product1 = new Product
+            {
+                Name = "Crisps",
+                Cost = 5.00f,
+                Member = Member1
+            };
+            var Product2 = new Product
+            {
+                Name = "Chocolate",
+                Cost = 15.00f,
+                Member = Member1
+            };
+            var Product3 = new Product
+            {
+                Name = "Lego",
+                Cost = 1.00f,
+                Member = Member2
+            };
+            var Product4 = new Product
+            {
+                Name = "Pork Pie",
+                Cost = 45.00f,
+                Member = Member1
+            };
+
+            context.Add(Member1);
+            context.Add(Member2);
+            context.Add(Product1);
+            context.Add(Product2);
+            context.Add(Product3);
+            context.Add(Product4);
+            context.SaveChanges();
         }
     }
 }

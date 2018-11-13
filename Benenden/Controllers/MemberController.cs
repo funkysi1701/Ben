@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Benenden.Core.Interface;
+﻿using Benenden.Core.Interface;
 using Benenden.Core.Models;
 using Benenden.Core.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Benenden.Web.Controllers
 {
@@ -35,23 +31,7 @@ namespace Benenden.Web.Controllers
             {
                 Members = _memberRepository.GetAll()
             };
-            return View(viewModel);
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult SelectMember([Bind("Id, Name, MemberId")] MemberVM member)
-        {
-            if (ModelState.IsValid)
-            {
-                MemberVM me = new MemberVM();
-                me.Member = _memberRepository.Get(member.MemberId);
-
-                return RedirectToAction("RelatedProducts", member);
-            }
-            else
-            {
-                return View();
-            }
+            return Json(viewModel);
         }
 
         // Step 2. Get products related to the selected member
@@ -63,9 +43,7 @@ namespace Benenden.Web.Controllers
             var productVM = new ProductVM();
             productVM.Products = products;
 
-            return View(productVM);
+            return Json(productVM);
         }
-
-
     }
 }

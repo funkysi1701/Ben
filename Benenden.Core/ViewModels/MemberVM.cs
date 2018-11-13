@@ -1,8 +1,5 @@
-﻿using System;
+﻿using Benenden.Core.Models;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-using Benenden.Core.Models;
 
 
 namespace Benenden.Core.ViewModels

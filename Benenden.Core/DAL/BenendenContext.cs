@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Benenden.Core.Models;
 using Microsoft.EntityFrameworkCore;
-using Benenden.Core.Models;
 
 namespace Benenden.Core.DAL
 {

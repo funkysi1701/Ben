@@ -1,5 +1,3 @@
-using System;
-
 namespace Benenden.Models
 {
     public class ErrorViewModel
