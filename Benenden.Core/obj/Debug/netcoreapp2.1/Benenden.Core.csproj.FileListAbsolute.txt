@@ -1,0 +1,9 @@
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\bin\Debug\netcoreapp2.1\Benenden.Core.deps.json
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\bin\Debug\netcoreapp2.1\Benenden.Core.dll
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\obj\Debug\netcoreapp2.1\Benenden.Core.csprojAssemblyReference.cache
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\obj\Debug\netcoreapp2.1\Benenden.Core.csproj.CoreCompileInputs.cache
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\obj\Debug\netcoreapp2.1\Benenden.Core.AssemblyInfoInputs.cache
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\obj\Debug\netcoreapp2.1\Benenden.Core.AssemblyInfo.cs
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\bin\Debug\netcoreapp2.1\Benenden.Core.pdb
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\obj\Debug\netcoreapp2.1\Benenden.Core.dll
+D:\Projects\Sides\BenAPI1\Benenden\Benenden.Core\obj\Debug\netcoreapp2.1\Benenden.Core.pdb
