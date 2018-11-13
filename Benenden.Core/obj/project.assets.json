@@ -2961,11 +2961,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden.Core\\Benenden.Core.csproj",
+      "projectUniqueName": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden.Core\\Benenden.Core.csproj",
       "projectName": "Benenden.Core",
-      "projectPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden.Core\\Benenden.Core.csproj",
+      "projectPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden.Core\\Benenden.Core.csproj",
       "packagesPath": "C:\\Users\\jay.creasy\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden.Core\\obj\\",
+      "outputPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

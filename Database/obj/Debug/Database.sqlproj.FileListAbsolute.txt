@@ -1,0 +1,5 @@
+D:\Projects\Sides\BenAPI1\Benenden\Ben\Database\bin\Debug\Database.dacpac
+D:\Projects\Sides\BenAPI1\Benenden\Ben\Database\bin\Debug\Database.dll
+D:\Projects\Sides\BenAPI1\Benenden\Ben\Database\bin\Debug\Database.pdb
+D:\Projects\Sides\BenAPI1\Benenden\Ben\Database\obj\Debug\Database.dll
+D:\Projects\Sides\BenAPI1\Benenden\Ben\Database\obj\Debug\Database.pdb

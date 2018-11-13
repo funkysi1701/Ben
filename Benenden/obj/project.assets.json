@@ -12246,11 +12246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden\\Benenden.Web.csproj",
+      "projectUniqueName": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden\\Benenden.Web.csproj",
       "projectName": "Benenden.Web",
-      "projectPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden\\Benenden.Web.csproj",
+      "projectPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden\\Benenden.Web.csproj",
       "packagesPath": "C:\\Users\\jay.creasy\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden\\obj\\",
+      "outputPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12269,8 +12269,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden.Core\\Benenden.Core.csproj": {
-              "projectPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Benenden.Core\\Benenden.Core.csproj"
+            "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden.Core\\Benenden.Core.csproj": {
+              "projectPath": "D:\\Projects\\Sides\\BenAPI1\\Benenden\\Ben\\Benenden.Core\\Benenden.Core.csproj"
             }
           }
         }
